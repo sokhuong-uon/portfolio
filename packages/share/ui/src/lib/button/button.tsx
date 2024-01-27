@@ -4,11 +4,7 @@ import styles from './button.module.css';
 export interface ButtonProps {}
 
 export function Button(props: ButtonProps) {
-  return (
-    <div className={styles['container']}>
-      <h1>Welcome to Button!</h1>
-    </div>
-  );
+  return <button className={styles['container']}>Click me!</button>;
 }
 
 export default Button;
