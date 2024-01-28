@@ -1,12 +1,8 @@
-import { Button } from '@portfolio/share-ui';
-
 export default async function Index() {
   return (
     <div className="">
       <div className="wrapper">
-        <div className="container">
-          <Button />
-        </div>
+        <div className="container">Welcome to work!</div>
       </div>
     </div>
   );
