@@ -1,5 +1,17 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from '../navigation-menu/NavigationMenu';
 
 export function NavigationBar() {
   const menu = [
@@ -34,7 +46,7 @@ export function NavigationBar() {
           />
         </Link>
 
-        <div className="flex items-center">
+        {/* <div className="flex items-center">
           {menu.map((item, index) => (
             <Link href={item.url}>
               <div
@@ -45,7 +57,18 @@ export function NavigationBar() {
               </div>
             </Link>
           ))}
-        </div>
+        </div> */}
+
+        <NavigationMenu>
+          <NavigationMenuList>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <NavigationMenuLink>Link</NavigationMenuLink>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
       </div>
     </div>
   );
