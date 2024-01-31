@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@portfolio/share-ui": ["packages/share/ui/src/index.ts"],
-      "@portfolio/share-ui/server": ["packages/share/ui/src/server.ts"]
+      "@portfolio/share-ui/server": ["packages/share/ui/src/server.ts"],
+      "@portfolio/utils": ["packages/share/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
