@@ -11,14 +11,13 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const Primary = {
-  args: {},
-};
-
-export const Heading: Story = {
-  args: {},
+export const Primary: Story = {
+  args: {
+    children: 'Home',
+    disabled: true,
+  },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    expect(canvas.getByText(/Click me!/gi)).toBeTruthy();
+    expect(canvas.getByText(/home/gi)).toBeTruthy();
   },
 };
