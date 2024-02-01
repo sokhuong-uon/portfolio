@@ -1,4 +1,5 @@
 import './global.css';
+import { NavigationBar } from '@portfolio/share-ui';
 
 export const metadata = {
   title: 'Sokhuong Uon | Portfolio',
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <NavigationBar />
+        {children}
+      </body>
     </html>
   );
 }

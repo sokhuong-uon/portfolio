@@ -14,7 +14,6 @@ type Story = StoryObj<typeof Button>;
 export const Primary: Story = {
   args: {
     children: 'Home',
-    disabled: true,
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
