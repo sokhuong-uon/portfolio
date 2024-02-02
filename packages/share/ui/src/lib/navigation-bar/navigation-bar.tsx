@@ -36,19 +36,6 @@ export function NavigationBar() {
   return (
     <div className="px-12 bg-black">
       <div className="flex items-center justify-end p-2">
-        {/* <div className="flex items-center">
-          {menu.map((item, index) => (
-            <Link href={item.url}>
-              <div
-                key={index}
-                className="px-4 py-2 text-white uppercase hover:bg-[#2f2f2f] cursor-pointer rounded-sm transition-all duration-300"
-              >
-                {item.name}
-              </div>
-            </Link>
-          ))}
-        </div> */}
-
         <NavigationMenu>
           <NavigationMenuList>
             {menu.map((item, index) => (
@@ -60,11 +47,10 @@ export function NavigationBar() {
             ))}
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Sketch</NavigationMenuTrigger>
-              <NavigationMenuContent className="py-2">
-                {/* <NavigationMenuLink></NavigationMenuLink>
-                <NavigationMenuLink>WebGL</NavigationMenuLink>
-                <NavigationMenuLink>Design</NavigationMenuLink> */}
+              <NavigationMenuTrigger className="text-white transition-none bg-transparent hover:bg-transparent">
+                Sketch
+              </NavigationMenuTrigger>
+              <NavigationMenuContent className="py-2 bg-black">
                 <SubMenu></SubMenu>
               </NavigationMenuContent>
             </NavigationMenuItem>
