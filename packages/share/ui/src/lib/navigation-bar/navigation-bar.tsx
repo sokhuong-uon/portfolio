@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import {
   NavigationMenu,
@@ -14,28 +14,28 @@ import { Button } from '../button/button';
 import { SubMenu } from '../sub-menu/sub-menu';
 
 export function NavigationBar() {
-  // const menu = [
-  //   {
-  //     name: 'Home',
-  //     url: '/',
-  //   },
-  //   {
-  //     name: 'Work',
-  //     url: '/work',
-  //   },
-  //   {
-  //     name: 'Blog',
-  //     url: '/blog',
-  //   },
-  //   {
-  //     name: 'Sketch',
-  //     url: '/sketch',
-  //   },
-  // ];
+  const menu = [
+    {
+      name: 'Home',
+      url: '/',
+    },
+    {
+      name: 'Work',
+      url: '/work',
+    },
+    {
+      name: 'Blog',
+      url: '/blog',
+    },
+    // {
+    //   name: 'Sketch',
+    //   url: '/sketch',
+    // },
+  ];
 
   return (
     <div className="px-12 bg-black">
-      <div className="flex items-center justify-between p-2">
+      <div className="flex items-center justify-end p-2">
         {/* <div className="flex items-center">
           {menu.map((item, index) => (
             <Link href={item.url}>
@@ -51,11 +51,13 @@ export function NavigationBar() {
 
         <NavigationMenu>
           <NavigationMenuList>
-            <NavigationMenuItem>
-              <Button variant="link" className="text-black bg-white">
-                Home
-              </Button>
-            </NavigationMenuItem>
+            {menu.map((item, index) => (
+              <NavigationMenuItem key={index}>
+                <Button variant="link" dark>
+                  {item.name}
+                </Button>
+              </NavigationMenuItem>
+            ))}
 
             <NavigationMenuItem>
               <NavigationMenuTrigger>Sketch</NavigationMenuTrigger>
