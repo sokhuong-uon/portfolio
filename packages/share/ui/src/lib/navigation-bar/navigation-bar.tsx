@@ -1,11 +1,11 @@
-// 'use client';
+'use client';
 
 import {
   NavigationMenu,
   NavigationMenuContent,
   // NavigationMenuIndicator,
   NavigationMenuItem,
-  NavigationMenuLink,
+  // NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
   // NavigationMenuViewport,
@@ -40,17 +40,17 @@ export function NavigationBar() {
           <NavigationMenuList>
             {menu.map((item, index) => (
               <NavigationMenuItem key={index}>
-                <Button variant="link" dark>
+                <Button variant="link" dark className="text-base">
                   {item.name}
                 </Button>
               </NavigationMenuItem>
             ))}
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-white transition-none bg-transparent hover:bg-transparent">
+              <NavigationMenuTrigger className="text-base text-white bg-transparent hover:bg-transparent">
                 Sketch
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="py-2 bg-black">
+              <NavigationMenuContent className="p-3 bg-black ">
                 <SubMenu></SubMenu>
               </NavigationMenuContent>
             </NavigationMenuItem>

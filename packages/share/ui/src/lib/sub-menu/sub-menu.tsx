@@ -14,7 +14,7 @@ export function SubMenu() {
   ];
 
   return (
-    <ul className="flex gap-2 text-white bg-black w-fit">
+    <ul className="flex gap-3 text-white bg-black w-fit">
       {items.map((item, index) => (
         <li key={index}>
           <SubMenuCard title={item.title}></SubMenuCard>
