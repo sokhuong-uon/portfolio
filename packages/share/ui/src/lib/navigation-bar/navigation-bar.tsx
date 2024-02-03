@@ -38,8 +38,8 @@ export function NavigationBar() {
       <div className="flex items-center justify-end p-2">
         <NavigationMenu>
           <NavigationMenuList>
-            {menu.map((item, index) => (
-              <NavigationMenuItem key={index}>
+            {menu.map((item) => (
+              <NavigationMenuItem key={item.url}>
                 <Button variant="link" dark className="text-base">
                   {item.name}
                 </Button>
