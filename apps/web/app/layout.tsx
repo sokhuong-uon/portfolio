@@ -1,5 +1,11 @@
 import './global.css';
+import { Prata } from 'next/font/google';
 import { NavigationBar } from '@portfolio/share-ui';
+
+const prataFont = Prata({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export const metadata = {
   title: 'Sokhuong Uon | Portfolio',
@@ -13,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={prataFont.className}>
       <body>
         <NavigationBar />
         {children}
