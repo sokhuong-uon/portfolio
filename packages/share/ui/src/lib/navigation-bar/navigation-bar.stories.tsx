@@ -9,6 +9,6 @@ export default meta;
 
 type Story = StoryObj<typeof NavigationBar>;
 
-export const Primary: Story = {
+export const Default: Story = {
   args: {},
 };

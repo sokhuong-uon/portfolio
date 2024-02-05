@@ -20,3 +20,15 @@ export const Primary: Story = {
     expect(canvas.getByText(/home/gi)).toBeTruthy();
   },
 };
+
+export const Link: Story = {
+  args: {
+    children: 'Home',
+    variant: 'link',
+    dark: true,
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    expect(canvas.getByText(/home/gi)).toBeTruthy();
+  },
+};

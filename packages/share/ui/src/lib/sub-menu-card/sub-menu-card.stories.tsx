@@ -9,5 +9,7 @@ export default meta;
 type Story = StoryObj<typeof SubMenuCard>;
 
 export const Primary: Story = {
-  args: {},
+  args: {
+    title: 'HTML',
+  },
 };
