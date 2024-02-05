@@ -88,6 +88,9 @@ devDependencies:
   '@storybook/addon-interactions':
     specifier: ^7.5.3
     version: 7.6.10
+  '@storybook/addon-themes':
+    specifier: ^7.6.12
+    version: 7.6.12
   '@storybook/core-server':
     specifier: 7.6.10
     version: 7.6.10
@@ -4390,6 +4393,12 @@ packages:
     resolution: {integrity: sha512-RVJrEoPArhI6zAIMNl1Gz0zrj84BTfEWYYz0yDWOTVgvN411ugsoIk1hw0671MOneXJ2RcQ9MFIeV/v6AVDQYg==}
     dependencies:
       '@storybook/global': 5.0.0
+      ts-dedent: 2.2.0
+    dev: true
+
+  /@storybook/addon-themes@7.6.12:
+    resolution: {integrity: sha512-3NwkWsbXxNtsrsnyVzjBDAR3Y1A/laojELmS4EOWl5BID/n4erDVF36KmGLvh8HuY9GidHaRnwsCClJCZXExsg==}
+    dependencies:
       ts-dedent: 2.2.0
     dev: true
 
