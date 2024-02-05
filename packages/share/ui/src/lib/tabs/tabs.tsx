@@ -13,7 +13,7 @@ export function SketchTabs() {
         <TabsTrigger value="html">HTML</TabsTrigger>
         <TabsTrigger value="design">Design</TabsTrigger>
       </TabsList>
-      <TabsContent value="webgl">webgl sketches here</TabsContent>
+      <TabsContent value="webgl">WebGL sketches here</TabsContent>
       <TabsContent value="html">HTML sketches here</TabsContent>
       <TabsContent value="design">Design sketches here</TabsContent>
     </Tabs>
