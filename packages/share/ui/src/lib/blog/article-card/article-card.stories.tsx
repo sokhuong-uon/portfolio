@@ -17,5 +17,7 @@ type Story = StoryObj<typeof ArticleCard>;
 export const Primary: Story = {
   args: {
     title: 'This is Title',
+    subtitle:
+      'Capturing highlight. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
   },
 };
