@@ -1,3 +1,5 @@
+import { PropsWithChildren } from 'react';
+
 type ArticleCardProps = PropsWithChildren<{ title: string; subtitle: string }>;
 export function ArticleCard({ title, subtitle }: ArticleCardProps) {
   return (
