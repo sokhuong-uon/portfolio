@@ -1,5 +1,3 @@
-import { Button } from '@portfolio/share-ui';
-
 export default async function Index() {
   return (
     <div className="">
