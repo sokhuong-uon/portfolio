@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={prataFont.className}>
-      <body>
+    <html lang="en" className={`${prataFont.className} h-full`}>
+      <body className="w-full h-full">
         <NavigationBar />
         {children}
       </body>
