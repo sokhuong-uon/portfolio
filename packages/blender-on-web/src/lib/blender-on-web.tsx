@@ -1,11 +1,9 @@
-import styles from './blender-on-web.module.css';
-
 /* eslint-disable-next-line */
 export interface BlenderOnWebProps {}
 
 export function BlenderOnWeb(props: BlenderOnWebProps) {
   return (
-    <div className={styles['container']}>
+    <div>
       <h1>Welcome to BlenderOnWeb!</h1>
     </div>
   );
