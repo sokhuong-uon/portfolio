@@ -1,7 +1,19 @@
-# blender-on-web
+# Blender on Web
 
-This library was generated with [Nx](https://nx.dev).
+This package is a sketch.
+
+This sketch is a 3D editor uses Threejs editor and custom UI.
+
+This sketch contains some functionalities of Blender software.
+
+## Running storybook
+
+```
+nx storybook blender-on-web
+```
 
 ## Running unit tests
 
-Run `nx test blender-on-web` to execute the unit tests via [Vitest](https://vitest.dev/).
+```
+nx test blender-on-web
+```
