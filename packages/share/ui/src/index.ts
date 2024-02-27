@@ -2,5 +2,8 @@
 
 export * from './lib/button/button';
 export * from './lib/navigation-bar/navigation-bar';
-export * from './lib/blog/article-card/article-card';
 export * from './lib/tabs/tabs';
+
+// blog
+export * from './lib/blog/blog-card/blog-card';
+export * from './lib/blog/article-card/article-card';
