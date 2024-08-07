@@ -4,6 +4,12 @@ Website: https://www.sokhuong.com
 
 Storybook: https://ui.sokhuong.com
 
+## Install dependencies
+
+```bash
+pnpm i
+```
+
 ## Start the app
 
 To start the development server run
