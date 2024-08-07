@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
+      "@portfolio/blender-on-web": ["packages/blender-on-web/src/index.ts"],
       "@portfolio/share-ui": ["packages/share/ui/src/index.ts"],
       "@portfolio/share-ui/server": ["packages/share/ui/src/server.ts"],
       "@portfolio/utils": ["packages/share/utils/src/index.ts"]
